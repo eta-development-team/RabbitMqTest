@@ -9,7 +9,6 @@ namespace RabbitMqSender
     {
         public static void Main(string[] args)
         {
-            
             var factory = new ConnectionFactory {HostName = "localhost"};
             using( var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
@@ -24,7 +23,7 @@ namespace RabbitMqSender
                 var timer = new Timer
                 {
                     Enabled = true,
-                    Interval = 1000
+                    Interval = 3000
                 };
 
                 timer.Elapsed += (sender, eventArgs) =>
@@ -37,6 +36,7 @@ namespace RabbitMqSender
                         body: Encoding.UTF8.GetBytes(message)
                     );
                 };
+                
                 Console.ReadLine();
             }
         }

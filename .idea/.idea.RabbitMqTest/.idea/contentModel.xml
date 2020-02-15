@@ -52,6 +52,8 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="RabbitMqBusReceiver.cs" t="Include" />
+        <e p="RabbitMqHub.cs" t="Include" />
         <e p="RabbitMqWebReceiver.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
