@@ -21,10 +21,7 @@ C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\RabbitMqWebReceiver.TagHelpers.output.cache
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\RabbitMqWebReceiver.RazorCoreGenerate.cache
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\RabbitMqWebReceiver.RazorTargetAssemblyInfo.cache
@@ -34,3 +31,5 @@ C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\RabbitMqWebReceiver.pdb
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\obj\Debug\netcoreapp3.1\RabbitMqWebReceiver.csproj.CopyComplete
 C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqWebReceiver\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll

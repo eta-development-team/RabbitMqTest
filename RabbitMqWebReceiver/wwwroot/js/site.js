@@ -1,4 +1,17 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const connection = new signalR.HubConnectionBuilder()
+    .withUrl("/rabbitMqHub")
+    .build();
 
-// Write your JavaScript code.
+connection.start().then( () => {
+    console.log("SignarR has been started!")
+}).catch( (err) => {
+    console.error(err)
+});
+
+connection.on("ReceiveMessage", (message) => {
+    const tag = document.createElement("p");
+    const text = document.createTextNode(message);
+    tag.appendChild(text);
+    const element = document.body;
+    element.appendChild(tag);
+});

@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -15,9 +16,10 @@ namespace RabbitMqWebReceiver
     {
         private IConnection _connection;
         private IModel _channel;
-
-        public RabbitMqBusReceiver()
+        private IHubContext<RabbitMqHub> _hubContext;
+        public RabbitMqBusReceiver(IHubContext<RabbitMqHub> hubContext)
         {
+            _hubContext = hubContext;
             InitRabbitMq();
         }
 
@@ -58,7 +60,11 @@ namespace RabbitMqWebReceiver
 
                 // handle the received message  
                 File.WriteAllText(@"c:\temp\RabbitMq.txt", content);
-
+                 _hubContext.Clients.All
+                     .SendAsync("ReceiveMessage", content, cancellationToken: stoppingToken)
+                     .GetAwaiter()
+                     .GetResult();
+                
                 _channel.BasicAck(ea.DeliveryTag, false);
             };
 
@@ -73,6 +79,14 @@ namespace RabbitMqWebReceiver
         }
     }
 
+    public class RabbitMqHub : Hub
+    {
+        public async Task Send(string message, string userName)
+        {
+            await Clients.All.SendAsync("Receive", message, userName);
+        }
+    }
+    
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -85,8 +99,10 @@ namespace RabbitMqWebReceiver
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddHostedService<RabbitMqBusReceiver>();
             services.AddControllersWithViews();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -109,6 +125,8 @@ namespace RabbitMqWebReceiver
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<RabbitMqHub>("/rabbitMqHub");
+                
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

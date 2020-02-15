@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Timers;
 using  RabbitMQ.Client;
 
 namespace RabbitMqSender
@@ -8,9 +9,9 @@ namespace RabbitMqSender
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
             var factory = new ConnectionFactory {HostName = "localhost"};
-            using var connection = factory.CreateConnection();
+            using( var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(queue: "demo.queue.log",
@@ -19,14 +20,24 @@ namespace RabbitMqSender
                     autoDelete: false,
                     arguments: null);
                 
-                var message = "Hello, RabbitMq!";
-                channel.BasicPublish
-                (
-                    exchange: string.Empty,
-                    routingKey: "demo.queue.log",
-                    basicProperties: null,
-                    body: Encoding.UTF8.GetBytes(message)
-                );
+                const string message = "Hello, RabbitMq!";
+                var timer = new Timer
+                {
+                    Enabled = true,
+                    Interval = 1000
+                };
+
+                timer.Elapsed += (sender, eventArgs) =>
+                {
+                    channel.BasicPublish
+                    (
+                        exchange: string.Empty,
+                        routingKey: "demo.queue.log",
+                        basicProperties: null,
+                        body: Encoding.UTF8.GetBytes(message)
+                    );
+                };
+                Console.ReadLine();
             }
         }
     }
