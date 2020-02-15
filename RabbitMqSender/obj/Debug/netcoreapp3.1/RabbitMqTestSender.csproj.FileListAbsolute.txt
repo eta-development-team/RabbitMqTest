@@ -1,0 +1,13 @@
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMqTestSender.exe
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMqTestSender.deps.json
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMqTestSender.runtimeconfig.json
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMqTestSender.runtimeconfig.dev.json
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMqTestSender.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMqTestSender.pdb
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\obj\Debug\netcoreapp3.1\RabbitMqTestSender.csprojAssemblyReference.cache
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\obj\Debug\netcoreapp3.1\RabbitMqTestSender.AssemblyInfoInputs.cache
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\obj\Debug\netcoreapp3.1\RabbitMqTestSender.AssemblyInfo.cs
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\obj\Debug\netcoreapp3.1\RabbitMqTestSender.csproj.CopyComplete
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\obj\Debug\netcoreapp3.1\RabbitMqTestSender.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqTestSender\obj\Debug\netcoreapp3.1\RabbitMqTestSender.pdb

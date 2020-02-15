@@ -1,0 +1,13 @@
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMqReceiver.exe
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMqReceiver.deps.json
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMqReceiver.runtimeconfig.json
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMqReceiver.runtimeconfig.dev.json
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMqReceiver.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMqReceiver.pdb
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\obj\Debug\netcoreapp3.1\RabbitMqReceiver.csprojAssemblyReference.cache
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\obj\Debug\netcoreapp3.1\RabbitMqReceiver.AssemblyInfoInputs.cache
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\obj\Debug\netcoreapp3.1\RabbitMqReceiver.AssemblyInfo.cs
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\obj\Debug\netcoreapp3.1\RabbitMqReceiver.csproj.CopyComplete
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\obj\Debug\netcoreapp3.1\RabbitMqReceiver.dll
+C:\Users\Leo\RiderProjects\RabbitMqTest\RabbitMqReceiver\obj\Debug\netcoreapp3.1\RabbitMqReceiver.pdb
